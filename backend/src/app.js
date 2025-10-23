@@ -11,20 +11,29 @@ const app = express();
 // Security middleware
 app.use(helmet());
 
-// CORS configuration
+// CORS configuration - UPDATED
 const corsOptions = {
   origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps, Postman, curl)
-    if (!origin) return callback(null, true);
+    // Allow requests with no origin (like mobile apps, Postman, curl, server-to-server)
+    if (!origin) {
+      return callback(null, true);
+    }
     
-    if (ALLOWED_ORIGINS.indexOf(origin) !== -1 || ALLOWED_ORIGINS.includes('*')) {
+    // Check if origin is in allowed list
+    const allowedOrigins = ALLOWED_ORIGINS.map(url => url.trim());
+    
+    if (allowedOrigins.includes(origin) || allowedOrigins.includes('*')) {
       callback(null, true);
     } else {
+      console.log(`❌ CORS blocked origin: ${origin}`);
+      console.log(`✅ Allowed origins: ${allowedOrigins.join(', ')}`);
       callback(new Error('Not allowed by CORS'));
     }
   },
   credentials: true,
-  optionsSuccessStatus: 200
+  optionsSuccessStatus: 200,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 };
 
 app.use(cors(corsOptions));
