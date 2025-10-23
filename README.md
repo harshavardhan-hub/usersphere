@@ -269,16 +269,16 @@ VITE_API_BASE_URL=https://your-backend.onrender.com/api
 ## Screenshots
 
 ### Dashboard  
-![Dashboard](https://res.cloudinary.com/youraccount/image/upload/v1234567890/dashboard.png)
+![Dashboard](https://res.cloudinary.com/drit9nkha/image/upload/v1761221620/Dashboard_durvyf.png)
 
 ### Add User  
-![Add User](https://res.cloudinary.com/youraccount/image/upload/v1234567890/add-user.png)
+![Add User](https://res.cloudinary.com/drit9nkha/image/upload/v1761221604/Add_User_gaemni.png)
 
 ### Edit User  
-![Edit User](https://res.cloudinary.com/youraccount/image/upload/v1234567890/edit-user.png)
+![Edit User](https://res.cloudinary.com/drit9nkha/image/upload/v1761221620/Edit_User_ryzenx.png)
 
 ### User Details  
-![User Details](https://res.cloudinary.com/youraccount/image/upload/v1234567890/user-details.png)
+![User Details](https://res.cloudinary.com/drit9nkha/image/upload/v1761221621/User_Details_saajaf.png)
 
 ---
 
@@ -320,19 +320,12 @@ npm run db:seed
 
 ---
 
-## License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.
-
----
-
 ## Author
 
-**Your Name**  
-GitHub: [@yourusername](https://github.com/yourusername)  
-LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)  
-Email: your.email@example.com
+**Harsha Vardhan Yanakandla**  
+GitHub: [@harshavardhan-hub](https://github.com/harshavardhan-hub)  
+LinkedIn: [Harsha Vardhan Yanakandla](https://www.linkedin.com/in/harsha-vardhan-yanakandla/)  
+Email: yanakandlaharshavardhan@gmail.com
 
 ---
 
