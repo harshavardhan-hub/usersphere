@@ -7,7 +7,7 @@ UserSphere provides a clean, professional interface for managing users with full
 
 ## Live Demo
 
-Frontend (Vercel): [https://usersphere.vercel.app](https://usersphere-neon.vercel.app/)  
+Frontend (Vercel LIVE LINK): [https://usersphere.vercel.app](https://usersphere-neon.vercel.app/)  
 Backend (Render): [https://usersphere-api.onrender.com](https://usersphere-backend.onrender.com)
 
 ---
