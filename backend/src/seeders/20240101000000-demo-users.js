@@ -2,6 +2,20 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
+    // Check if users already exist
+    const existingUsers = await queryInterface.sequelize.query(
+      `SELECT COUNT(*) as count FROM users;`,
+      { type: Sequelize.QueryTypes.SELECT }
+    );
+
+    // Only seed if database is empty
+    if (existingUsers[0].count > 0) {
+      console.log('✅ Users already exist, skipping seeding');
+      return;
+    }
+
+    console.log('🌱 Seeding demo users...');
+
     const users = [
       {
         name: 'Harsha Royal',
