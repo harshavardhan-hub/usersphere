@@ -1,0 +1,14 @@
+.user-card {
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
+  }
+}
